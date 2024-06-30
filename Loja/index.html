@@ -16,7 +16,7 @@
         
     </head>
 
-    <body>
+    <body id="app">
 
         <nav class="navbar navbar-expand-sm">
             <div class="container" style="margin: 0 auto !important">
@@ -123,60 +123,29 @@
         <div class="container" style="margin:0 auto !important; margin-top:15px !important; margin-bottom: 40px;">
             <h1 class="TitleSection poppins-black" style="background: url(./IMG/Bg_Banner.png) no-repeat; background-position: 80px 20px; font-weight: 900 !important;">New Arrivals</h1>
         
-
             <div class="container" style="margin:0 auto !important; margin-top:15px !important; margin-bottom: 40px;">
                 <div class="container row"> 
-                    <div class="col-md-4 text-center " style="padding: 45px !important;">
+                    
+                    <div v-for="(arrival, index) in newArrivals" class="col-md-4 text-center " style="padding: 45px !important;">
                         <div class="container text-center">
-                            <div >
+                            <div>
                                 <img src="./IMG/IMG1.png" style="border-radius: 50px;">
                             </div>
-                            <h3>Hoodies & Sweetshirt
+                            <h3>{{ arrival.title }}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                   <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
                                 </svg>
                               </h3>
                                   <p>
-                                    Explore Now!    
+                                    {{ arrival.introduction}}
                                   </p>  
                        </div>
                     </div>
-                    <div class="col-md-4 text-center " style="padding: 45px !important;">
-                        <div class="container text-center">
-                            <div >
-                                <img src="./IMG/IMG1.png" style="border-radius: 50px;">
-                            </div>
-                            <h3>Coats & Parkas
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-                                </svg>
-                              </h3>
-                                  <p>
-                                    Explore Now!    
-                                  </p> 
-                       </div>
-                    </div>
-                    <div class="col-md-4 text-center " style="padding: 45px !important;">
-                        <div class="container text-center">
-                            <div >
-                                <img src="./IMG/IMG1.png" style="border-radius: 50px;">
-                            </div>
-                            <h3 class="text-center poppins-medium">Tees & T-shirts
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
-                                </svg>
-                              </h3>
-                                  <p>
-                                    Explore Now!    
-                                  </p> 
-                       </div>
-                    </div>
+                    
                 </div>
             </div>
         </div> 
     </section>
-
-        
         
     <section id="Sales">        
         <div class="container-fluid row" style="background-color: var(--cor_amarela);">
@@ -214,33 +183,28 @@
 
             <div class="row" style="margin: 0 auto !important;padding-top: 50px !important;padding-left: 200px !important;padding-right: 200px !important;">
 
-              <div class="col-md-6 col-sm-12 text-center" style="text-align: center center;margin: 0 auto !important;padding-left: 44px !important;">
+              <div v-for="(favourites, index) in favourites"  class="col-md-6 col-sm-12 text-center" style="text-align: center center;margin: 0 auto !important;padding-left: 44px !important;">
   
-                <div style="border-radius: 15px;height: 500px;width: 100%;background:  url('./IMG/young\ fav\ 2.png')  no-repeat center center;
+                <div v-if="index < 1" style="border-radius: 15px;
+                height: 500px;
+                width: 100%;background:  url('./IMG/young\ fav\ 1.png')  no-repeat center center;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;"></div>
 
-                <h1 style="font-size: 30px; text-align: start !important;"> Trending On Instagram!!! </h1>
-                <div style=" text-align: start !important;font: poppins-black;text-align: left;"> Explore Now! </div>
-
-
-              </div>
-
-              <div class="col-md-6 col-sm-12 text-center" style="text-align: center center;margin: 0 auto !important;padding-left: 44px !important;">
-  
-                <div style="border-radius: 15px;height: 500px;width: 100%;background: url('./IMG/young\ fav\ 1.png') no-repeat center center;
+                <div v-if="index > 0"  style="border-radius: 15px;
+                height: 500px;
+                width: 100%;background:  url('./IMG/young\ fav\ 2.png')  no-repeat center center;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;"></div>
 
-
-                <h1 style="font-size: 30px; text-align: start !important;"> All Under $40 </h1>
+                <h1 style="font-size: 30px; text-align: start !important;"> {{ favourites.title }} </h1>
                 <div style=" text-align: start !important;font: poppins-black;text-align: left;"> Explore Now! </div>
-                
               </div>
+
             </div>
           </div>
         </section>
@@ -275,13 +239,6 @@
         </div> 
         </div>-->
             
-        
-       
-            
-
-        
-
-        
         <!--<div class="container-fluid" style="background-color:var(--cor_amarela); margin-top: 150px !important;">
             <div class="poppins-black" style="color: #fff;padding-left: 850px !important;font-size: 50px !important;padding-top: 200px !important;">JOIN SHOPPING COMMUNITY TO</div>
             <div class="poppins-black" style="color: #fff;padding-left: 930px !important;font-size: 50px !important;">GET MONTHLY PROMO</div>
@@ -391,16 +348,6 @@
             </div>
           </div>
 
-          <div id="app">
-            <h2>Todo App</h2>
-        
-            <p v-for="note in notes">
-                <b>{{ note.description }}</b>
-            </p>
-        
-        
-        </div>
-        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js" integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         
         <script type="module">
@@ -409,6 +356,8 @@
           createApp({
             data() {
               return {
+                newArrivals: [],
+                favourites: [],
                 title: "Loja",
                 notes: []
               }
@@ -418,11 +367,18 @@
                     //alert("1");
                     axios.get(API_URL + "api/Collection/Getnote").then(
                         (response)=> {
-                            this.notes = response.data;
+                            this.newArrivals = response.data.slice(0, 3);
+                            this.favourites = response.data.slice(0, 2);
                         }
+                        
                     );
                     //alert("2");
+                },
+                imageGenerator(index){
+                    // './IMG/IMG'+(index+1)+'.png';
+                    return './IMG/IMG1.png';
                 }
+                
             }, 
             mounted:function() {
                 this.refreshData();
