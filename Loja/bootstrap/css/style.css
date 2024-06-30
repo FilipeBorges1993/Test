@@ -1,0 +1,86 @@
+:root{
+  --cor_amarela:#E6C744;
+  --cor_escura: #000000;
+  --cor_clara: #FFFFFF;
+  --cor_cinza: #C2C8DA;
+}
+
+
+* {
+    margin: 0px !important;
+    padding: 0px !important;
+    font-family: "Poppins", sans-serif !important;
+    font-weight: 500 !important;
+    font-style: normal !important;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .cor_amarela{
+    color: var(--cor_amarela);
+  }
+
+  .cor_escura{
+    color: var(--cor_escura);
+  }
+
+  .cor_claro{
+    color: var(--cor_clara);
+  }
+
+  .cor_cinza{
+    color: var(--cor_cinza);
+  }
+  
+
+  .meumenu{
+    text-transform: uppercase;
+    padding: 10px 30px !important;
+  }
+
+  .direcaomenu{
+    flex-direction: row-reverse !important;
+  }
+
+  .img-responsive{
+    width: 50%;
+    max-width: 400px;
+  }
+/* New Arrivals */
+.posição-newarrivals {
+  position: absolute;
+  width: 1638px;
+  height: 967px;
+  left: 104px;
+  top: 1334px;
+
+}
+
+.layout-newarrivals{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 90px;
+}
+
+
+
+
+
+  

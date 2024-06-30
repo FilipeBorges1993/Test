@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+        
+        <!-- bootstrap no projeto -->
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./CSS/style.css"> 
+
+        
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-sm">
+            <div class="container" style="margin: 0 auto !important">
+              
+                <!--<a class="navbar-brand" href="#">
+                    <img src="./IMG/LOGOTIPO.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                    Fashion
+                </a>-->
+                <img src="./IMG/LOGOTIPO.png">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <form class="d-flex">
+                    <div class="collapse navbar-collapse direcaomenu" id="mynavbar">
+                        <ul class="navbar-nav me-auto" >
+                            <li class="nav-item">
+                                <a class="nav-link meumenu" href="#catalogue" class="cor_claro">Catalogue</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link meumenu" href="#fashion">Fashion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link meumenu" href="#favourite">Favourite</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link meumenu" href="#lifestyle">Lifestyle</a>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn btn-dark meumenu">Sign Up</button>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                    
+                
+            </div>
+        </nav>
+        
+        <div class="container" style="margin: 0 auto !important; margin-top:15px !important; margin-bottom: 40px !important;">
+
+            <div style="border-radius: 50px; height: 500px; width: 100%; background: url('./IMG/banner.jpg'); 
+             -webkit-background-size: cover; -moz-background-size: cover;
+            -o-background-size: cover; background-size: cover;"></div>
+        </div>
+        
+        <div class="container-fluid" style="background-color: var(--cor_amarela);" >
+
+            <div class="container row"  style="margin: 0 auto !important">
+                <div class="col-md-2 text-center" style="padding:30px !important;">
+                    <img src="./IMG/LOGOTIPO.png" width="100%">
+                </div>
+                <div class="col-md-2 text-center" style="padding:30px !important;">
+                    <img src="./IMG/LOGOTIPO.png" width="100%">
+                </div>
+                <div class="col-md-2 text-center" style="padding:30px !important;">
+                    <img src="./IMG/LOGOTIPO.png" width="100%">
+                </div>
+                <div class="col-md-2 text-center" style="padding:30px !important;">
+                    <img src="./IMG/LOGOTIPO.png" width="100%">
+                </div>
+                <div class="col-md-2 text-center" style="padding:30px !important;">
+                    <img src="./IMG/LOGOTIPO.png" width="100%">
+                </div>
+                <div class="col-md-2 text-center" style="padding:30px !important;">
+                    <img src="./IMG/LOGOTIPO.png" width="100%">
+                </div>
+            </div>
+
+        </div>
+
+            <!--<nav class="navbar navbar-expand-sm navbar-light bg-light" style="background-color:#fff !important;">
+                <div class="container" style="margin:0 auto !important;">
+                    <img src="./img/logo.png">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="mynavbar">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item meumenu">
+                                <a class="nav-link" href="#catalogue">Catalogue</a>
+                            </li>
+                            <li class="nav-item meumenu">
+                                <a class="nav-link" href="#fashion">Fashion</a>
+                            </li>
+                            <li class="nav-item meumenu">
+                                <a class="nav-link" href="#favourite">Favourite</a>
+                            </li>
+                            <li class="nav-item meumenu">
+                                <a class="nav-link" href="#lifestyle">Lifestyle</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex">
+                            <button class="btn btn-dark meumenu" type="button">Sign UP</button>
+                        </form>
+                    </div>
+                </div>
+              </nav> -->
+
+              
+
+        <div class="container" style="margin:0 auto !important; margin-top:15px !important; margin-bottom: 40px;">
+            <h1 class="TitleSection poppins-black" style="background: url(./IMG/Bg_Banner.png) no-repeat; background-position: 80px 20px; font-weight: 900 !important;">New Arrivals</h1>
+        
+
+            <div class="container" style="margin:0 auto !important; margin-top:15px !important; margin-bottom: 40px;">
+                <div class="container row"> 
+                    <div class="col-md-4 text-center " style="padding: 45px !important;">
+                        <div class="container text-center">
+                            <div >
+                                <img src="./IMG/IMG1.png" style="border-radius: 50px;">
+                            </div>
+                            <h3>Hoodies & Sweetshirt
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                              </h3>
+                                  <p>
+                                    Explore Now!    
+                                  </p>  
+                       </div>
+                    </div>
+                    <div class="col-md-4 text-center " style="padding: 45px !important;">
+                        <div class="container text-center">
+                            <div >
+                                <img src="./IMG/IMG1.png" style="border-radius: 50px;">
+                            </div>
+                            <h3>Coats & Parkas
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                              </h3>
+                                  <p>
+                                    Explore Now!    
+                                  </p> 
+                       </div>
+                    </div>
+                    <div class="col-md-4 text-center " style="padding: 45px !important;">
+                        <div class="container text-center">
+                            <div >
+                                <img src="./IMG/IMG1.png" style="border-radius: 50px;">
+                            </div>
+                            <h3 class="text-center poppins-medium">Tees & T-shirts
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                                </svg>
+                              </h3>
+                                  <p>
+                                    Explore Now!    
+                                  </p> 
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+            
+        <div class="container-fluid row" style="background-color: var(--cor_amarela);">
+            <div class="col-md-6" style=" min-height: 300px; text-align: right; background: url(./IMG/estrelas.png);  -o-background-size: contain; background-size: contain;">
+                <div style="padding-top: 30px !important; ">
+                    <img src="./IMG/girl.png" class="img-fluid" style="max-width: 600px;">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div style="position:relative; display:table-row ;" >
+                    <div style="z-index:1;position: absolute; top: 60px; left:150px;width:100%;">
+                        <img src="./IMG/retangulo.png">
+                    </div>
+                    <div style="z-index:2;position: relative; top:80px; width: 603px; height: 275px; left: 175px;">
+                        <h1 class="TitleSection poppins-black" style="font-weight: 900 !important;font-size: 110px;" >PAYDAY</h1>
+                        <h1 class="TitleSection poppins-black" style="font-weight: 900 !important;font-size: 110px;" >SALE NOW</h1>
+
+                        <div style="font-size: 25px;padding-top: 10px !important;padding-left: 10px !important;">Spend minimal $100 get 30% off
+                            voucher code for your next purchase</div>
+                            <div class="poppins-black"style="font-size: 25px;padding-top: 10px !important;padding-left: 10px !important;">1 June - 10 June 2021</div>
+                            <div class="poppins-black"style="font-size: 25px;padding-left: 10px !important;">*Terms & Conditions apply</div>
+                            <div style="padding-top: 10px !important;padding-left: 10px !important;padding-bottom: 100px !important;"><button class="btn btn-dark " type="button" style="height: 50px;width: 150px;">SHOP NOW</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="margin:0 auto !important; margin-top:15px !important; margin-bottom: 40px;">
+            <h1 class="TitleSection poppins-black" style="background: url(./IMG/Bg_Banner.png) no-repeat; background-position: 200px 20px; font-weight: 900 !important;">Young's Favourite</h1> 
+        </div>
+        <div class="container-fluid">
+
+            <div class="row" style="margin: 0 auto !important;padding-top: 50px !important;padding-right: 400px !important;">
+
+              <div class="col-md-6" style="text-align: center;margin: 0 auto !important;padding-left: 10px !important;">
+  
+                <div style="border-radius: 50px;height: 500px;width: 100%;background:  url('./IMG/young\ fav\ 2.png')  no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;"></div>
+
+                <h1 style="font-size: 30px; text-align: start !important;"> Trending On Instagram!!! </h1>
+                <div style=" text-align: start !important;font: poppins-black;text-align: left;"> Explore Now! </div>
+                <button class="btn btn-dark " type="button"></button>
+
+              </div>
+
+              <div class="col-md-6" style="text-align: center;margin: 0 auto !important;padding-left: 10px !important;">
+  
+                <div style="border-radius: 50px;height: 500px;width: 100%;background: url('./IMG/young\ fav\ 1.png') no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;"></div>
+
+
+                <h1 style="font-size: 30px; text-align: start !important;"> All Under $40 </h1>
+                <div style=" text-align: start !important;font: poppins-black;text-align: left;"> Explore Now! </div>
+                <button class="btn btn-dark " type="button"></button>
+                
+              </div>
+            </div>
+          </div>
+
+          <section id="App">
+
+            <div class="container-fluid">
+              <div class="row" style="margin: 0 auto !important;">
+                <div class="col-md-6 col-sm-12" style="text-align: center center;">
+                  <div class="meumenu" style="font-size: 75px;padding-left: 35px !important;padding-left: 200px !important;">
+                    <div class="poppins-black" style="font-size: 75px;padding-top: 300px !important;">
+                      DOWNLOAD APP &
+                    </div>
+                </div>
+                <div class="poppins-black" style="font-size: 75px;padding-left: 35px !important;padding-left: 200px !important;">
+                  GET THE VOUCHER!
+                </div>
+                  <div class="poppins-black"style="font-size: 25px;padding-top: 50px !important;padding-left: 200px !important;">Get 30% off for first transaction using</div>
+                  <div class="poppins-black"style="font-size: 25px;padding-left: 200px !important;">Rondovision mobile app for now.</div>
+                  <div style="padding-top: 20px !important;padding-left: 200px !important;padding-bottom: 100px !important;"><img src="./IMG/appstore.png"><img src="./IMG/googleplay.png" style="padding-left: 60px !important;"></div>
+              </div>
+                <div class="col-md-6 col-sm-12">
+                  <img src="./IMG/telemovel.png" style="height: 900px;width: 671px;">
+                </div>                
+              </div>                
+            </div>
+
+          </section>
+        <!--<div class="container-fluid">
+            <div class="row" style="margin: 0 auto !important;padding-top: 50px !important;padding-right: 400px !important;">
+                <div class="col-md-6 col-sm-12" style="text-align: center; margin: 0 auto !important;padding-left: 44px !important;">
+  
+                    <div style="border-radius: 50px;height: 500px;width: 100%;background:  url('./IMG/young\ fav\ 1.png')  no-repeat center center;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;"></div>
+
+                    <h1 style="font-size: 30px; text-align: start !important;"> Trending On Instagram!!! </h1>
+                    <div style=" text-align: start !important;font: poppins-black;text-align: left;"> Explore Now! </div>
+                    <button class="btn btn-dark " type="button"></button>
+    
+                </div>
+                <div class="col-md-6 col-sm-12 " style="text-align: center;margin: 0 auto !important;padding-left: 44px !important;">
+      
+                    <div style="border-radius: 50px;height: 500px;width: 100%;background: url('./IMG/young\ fav\ 2.png') no-repeat center center;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;">
+                </div>
+                <h1 style="font-size: 30px; text-align: start !important;"> All Under $40 </h1>
+                    <div style=" text-align: start !important;font: poppins-black;text-align: left;"> Explore Now! </div>
+                    <button class="btn btn-dark " type="button"></button>
+            
+                
+        </div> 
+        </div>-->
+            
+        
+       
+            
+
+        
+
+        
+        <!--<div class="container-fluid" style="background-color:var(--cor_amarela); margin-top: 150px !important;">
+            <div class="poppins-black" style="color: #fff;padding-left: 850px !important;font-size: 50px !important;padding-top: 200px !important;">JOIN SHOPPING COMMUNITY TO</div>
+            <div class="poppins-black" style="color: #fff;padding-left: 930px !important;font-size: 50px !important;">GET MONTHLY PROMO</div>
+            <div class="poppins-black" style="color: #fff;padding-left: 860px !important;font-size: 25px !important;">Type your email down below and be young wild generation</div>
+            <div class="poppins-black" style="color: #fff;padding-left: 820px !important;font-size: 25px !important;">
+            </div>
+            
+        </div>-->
+            
+        <div class="container-fluid" style="background-color: var(--cor_amarela); margin-top: 35px !important; height: 650px;" >
+
+            <div class="container row"  style="margin: 0 auto !important">
+                <div class="col-md-12 text-center " style="margin-top: 100px !important; padding:30px 50px !important; color: var(--cor_clara); font-size: 140px; font-weight: 900px;">
+                    <h1>JOIN SHOPPING COMMUNITY </h1>
+                      <h1>TO GET MONTHLY PROMO</h1>  
+                </div>
+                <div class="col-md-12 text-center poppins-regular" style="padding:5px !important; color: var(--cor_clara);font-size: 30px;">
+                    Type your email down below and be young wild generation
+                </div>
+            </div>
+                
+            <div style="padding-top: 25px !important;">
+                <nav class="navbar bg-light">
+                  <div class="container-fluid" style="background-color:var(--cor_amarela);">
+                    <form class="d-flex" role="search"  style="padding-left: 730px !important;">
+                        <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter email" name="email">
+                      <button class="btn btn-dark" type="submit" style="width: 200px;">Send</button>
+                      <br><br>
+                    </form>
+                    <br><br><br><br><br><br>
+                  </div>
+                </nav>
+              </div>
+        </div>
+
+        <div class="container-fluid bg-dark" style="background-color: #000; height: 500px;">
+            <div class="container-fluid">
+                <div class="row" style="padding: 50px 0px;">
+      
+                    <div class="col-md-6 col-sm-12 text-light" style="padding-top: 150px !important; ">
+      
+                        <h1 class="poppins-black">Fashion</h1><br><br>
+      
+                        <p style="color: var(--cor_cinza);">Complete your style with awesome clothes from us</p>
+      
+                        <br><br>
+      
+                        <img src="./IMG/icones.png">
+                    
+                    </div>
+      
+                    <div class="col-md-2 col-sm-4 text-light" style="padding-top: 150px !important;">
+      
+                      <p>Company</p><br>
+                      <p style="color: var(--cor_cinza);">About</p><br>
+                      <p style="color: var(--cor_cinza);">Contact us</p><br>
+                      <p style="color: var(--cor_cinza);">Suport</p><br>
+                      <p style="color: var(--cor_cinza);">Careers</p><br>
+      
+                    </div>
+      
+                    <div class="col-md-2 col-sm-4 text-light" style="padding-top: 150px !important;">
+      
+                      <p>Quick Link</p><br>
+                      <p style="color: var(--cor_cinza);">Share Location</p><br>
+                      <p style="color: var(--cor_cinza);">Orders</p><br>
+                      <p style="color: var(--cor_cinza);">Size</p><br>
+                      <p style="color: var(--cor_cinza);">FAQs</p><br>
+      
+                    </div>
+      
+                    <div class="col-md-2 col-sm-4 text-light" style="padding-top: 150px !important;">
+      
+                      <p>Legal</p><br>
+                      <p style="color: var(--cor_cinza);">Terms</p><br>
+                      <p style="color: var(--cor_cinza);">Privacy</p><br>
+      
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
+        
+        
+    </body>
+</html>
+
+
