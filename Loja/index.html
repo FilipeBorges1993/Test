@@ -288,8 +288,8 @@
                         <nav class="navbar bg-light">
                             <div class="container-fluid" style="background-color:var(--cor_amarela);padding-left: 750px !important;">
                                 <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Add your email here" aria-label="Search" style="text-align:left !important; width: 300px;">
-                                <button class="btn btn-dark" type="submit" style="width: 100px;">Send</button>
+                                <input class="form-control me-2" v-model="email" type="search" placeholder="Add your email here" aria-label="Search" style="text-align:left !important; width: 300px;">
+                                <button class="btn btn-dark" @click.prevent="sendEmail" style="width: 100px;">Send</button>
                                 <br><br>
                                 </form>
                                 <br><br><br><br><br><br>
@@ -359,6 +359,7 @@
                 newArrivals: [],
                 favourites: [],
                 title: "Loja",
+                email: "",
                 notes: []
               }
             },
@@ -377,6 +378,10 @@
                 imageGenerator(index){
                     // './IMG/IMG'+(index+1)+'.png';
                     return './IMG/IMG1.png';
+                },
+                sendEmail(){
+                    
+                    console.log(this.email);
                 }
                 
             }, 
